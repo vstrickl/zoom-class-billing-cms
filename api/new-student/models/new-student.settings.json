@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "new_students",
+  "info": {
+    "name": "New Student",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "DOB": {
+      "type": "date"
+    },
+    "student_img": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "class_list": {
+      "model": "class-list",
+      "via": "new_students"
+    }
+  }
+}

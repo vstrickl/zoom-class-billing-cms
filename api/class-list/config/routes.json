@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/class-lists",
+      "handler": "class-list.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/class-lists/count",
+      "handler": "class-list.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/class-lists/:id",
+      "handler": "class-list.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/class-lists",
+      "handler": "class-list.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/class-lists/:id",
+      "handler": "class-list.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/class-lists/:id",
+      "handler": "class-list.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
