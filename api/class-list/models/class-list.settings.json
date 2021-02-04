@@ -43,6 +43,13 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "class_desc": {
+      "type": "richtext"
     }
   }
 }

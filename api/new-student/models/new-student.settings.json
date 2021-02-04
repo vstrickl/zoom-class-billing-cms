@@ -25,9 +25,6 @@
     "phone": {
       "type": "biginteger"
     },
-    "DOB": {
-      "type": "date"
-    },
     "student_img": {
       "model": "file",
       "via": "related",
@@ -42,6 +39,13 @@
     "class_list": {
       "model": "class-list",
       "via": "new_students"
+    },
+    "packages": {
+      "collection": "package",
+      "via": "new_student"
+    },
+    "nick_name": {
+      "type": "string"
     }
   }
 }

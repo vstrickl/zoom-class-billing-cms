@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "packages",
+  "info": {
+    "name": "package",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "class": {
+      "model": "class-list"
+    },
+    "new_student": {
+      "via": "packages",
+      "model": "new-student"
+    },
+    "classpk": {
+      "type": "enumeration",
+      "enum": [
+        "five",
+        "ten"
+      ]
+    },
+    "qty": {
+      "type": "integer"
+    },
+    "date_purchased": {
+      "type": "date"
+    }
+  }
+}
